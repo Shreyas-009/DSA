@@ -32,6 +32,9 @@ printList(list);
 
 
 function evenOddList(list) {
+  // for empty list
+  if (!head || !head.next) return head;
+
   let odd = list.head;
   let even = list.head.next;
   let Evenstart = even;
