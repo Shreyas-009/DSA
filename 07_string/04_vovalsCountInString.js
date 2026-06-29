@@ -40,7 +40,7 @@ function vovalsCountInString2(str) {
   let vovals = new Set(["a", "e", "i", "o", "u"]);
 
   for (let i = 0; i < str.length; i++) {
-    store[str[i]] =! store[str[i]] ?  1 : ++store[str[i]];
+    store[str[i]] = !store[str[i]] ?  1 : ++store[str[i]];
   }
 
   let maxVovalCount = 0;
@@ -58,3 +58,4 @@ function vovalsCountInString2(str) {
 
 console.log(vovalsCountInString1(str));
 console.log(vovalsCountInString2(str));
+
