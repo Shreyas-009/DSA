@@ -1,20 +1,17 @@
 let str = "RLRRLLRLRL";
 
 function splitString1(str) {
-  let r = 0;
-  let l = 0;
+  let ch = 0;
   let count = 0;
 
   for (let i = 0; i < str.length; i++) {
     if (str[i] == "R") {
-      r++;
+      ch++;
     } else {
-      l++;
+      ch--;
     }
-    if (r == l) {
+    if (!ch) {
       count++;
-      r = 0;
-      l = 0;
     }
   }
 
